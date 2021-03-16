@@ -8,7 +8,7 @@ namespace OnlineShop.Entities
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public string DocumentId { get; set; }
+        public string DocumentNumber { get; set; }
         public string SalesInvoiceNumber { get; set; }
         public int SalesInvoiceId { get; set; }
         public SalesInvoice SalesInvoice { get; set; }

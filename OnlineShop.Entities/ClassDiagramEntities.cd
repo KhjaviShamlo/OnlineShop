@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OnlineShop.Entities.Good">
+    <Position X="10.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAkAAAAAgAAAAAIAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Good.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OnlineShop.Entities.AccountingDocument">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAgAAAAUAAAAAAAAAAAAAAAAQAABAAAAAAAAAAA=</HashCode>
+      <FileName>AccountingDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineShop.Entities.GoodCategory">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>GoodCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineShop.Entities.GoodInput">
+    <Position X="7.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAABAAAAAAgAAAACAAAAAACAAAAAAAAAAAAE=</HashCode>
+      <FileName>GoodInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineShop.Entities.SalesInvoice">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAQAgAAAAAAQAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>SalesInvoice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineShop.Entities.SalesInvoiceItems">
+    <Position X="10.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAIAAAAAAAAQAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>SalesInvoiceItems.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineShop.Entities.Warehouse">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAgAAAAE=</HashCode>
+      <FileName>Warehouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

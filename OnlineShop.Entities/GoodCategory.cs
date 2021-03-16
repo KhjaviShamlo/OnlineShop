@@ -8,6 +8,7 @@ namespace OnlineShop.Entities
     {
         public int Id { get; set; }
         public string  Title { get; set; }
+        public HashSet<Good> Goods { get; set; }
 
     }
 }
