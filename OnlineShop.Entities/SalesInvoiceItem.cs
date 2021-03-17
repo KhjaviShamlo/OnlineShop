@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OnlineShop.Entities
 {
-   public class SalesInvoiceItems
+   public class SalesInvoiceItem
     {
         public int Id { get; set; }
         public int GoodId { get; set; }

@@ -1,0 +1,35 @@
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineShop.Entities;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace OnlineShop.Persistence.Ef
+{
+    public class EFDataContext : DbContext
+    {
+        public DbSet<Good> Goods { get; set; }
+        public DbSet<GoodCategory> GoodCategores { get; set; }
+        public DbSet<GoodInput> GoodEntries { get; set; }
+        public DbSet<SalesInvoice> SalesInvoiceis { get; set; }
+        public DbSet<Warehouse> Warehouse { get; internal set; }
+
+        public EFDataContext(string connectionString) : this(new DbContextOptionsBuilder<EFDataContext>().UseSqlServer(connectionString).Options)
+        {
+        }
+
+        private EFDataContext(DbContextOptions<EFDataContext> options)
+            : this((DbContextOptions)options)
+        {
+        }
+
+        protected EFDataContext(DbContextOptions options) : base(options)
+        {
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(EFDataContext).Assembly);
+        }
+
+    }
+}

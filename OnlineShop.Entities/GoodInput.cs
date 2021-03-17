@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace OnlineShop.Entities
 {
     public class GoodInput
@@ -11,6 +8,6 @@ namespace OnlineShop.Entities
         public int GoodId { get; set; }
         public Good Good { get; set; }
         public DateTime EntryDate { get; set; }
-        public int Numberofgoods { get; set; }
+        public int GoodCount { get; set; }
     }
 }
