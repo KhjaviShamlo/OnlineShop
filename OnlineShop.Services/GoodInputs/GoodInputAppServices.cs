@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OnlineShop.Services.SalesInvoices
+namespace OnlineShop.Services.GoodInputs
 {
-    interface SalesInvoiceRepository
+   public interface GoodInputAppServices
     {
     }
 }
