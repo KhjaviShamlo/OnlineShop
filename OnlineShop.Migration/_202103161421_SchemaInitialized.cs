@@ -7,20 +7,22 @@ namespace OnlineShop.Migrations
     
     [Migration(202103161421)]
     
-    class _202103161421_SchemaInitialized : FluentMigrator.Migration
+   public class _202103161421_SchemaInitialized : FluentMigrator.Migration
     {
         public override void Up()
         {
-            Create.Table("Goods")
-                .WithColumn("Id").AsInt32().Identity().PrimaryKey()
-                .WithColumn("Title").AsString().NotNullable()
-                .WithColumn("Code").AsString().NotNullable()
-                .WithColumn("MinimumInventory").AsInt32().NotNullable()
-                .WithColumn("CategoryId").AsInt32().ForeignKey("FK_Goods_GoodCategories", "GoodCategories", "Id");
+           
 
             Create.Table("GoodCategories")
                 .WithColumn("Id").AsInt32().Identity().PrimaryKey()
                 .WithColumn("Title").AsString().NotNullable();
+
+            Create.Table("Goods")
+               .WithColumn("Id").AsInt32().Identity().PrimaryKey()
+               .WithColumn("Title").AsString().NotNullable()
+               .WithColumn("Code").AsString().NotNullable()
+               .WithColumn("MinimumInventory").AsInt32().NotNullable()
+               .WithColumn("CategoryId").AsInt32().ForeignKey("FK_Goods_GoodCategories", "GoodCategories", "Id");
 
             Create.Table("SalesInvoiceis")
                .WithColumn("Id").AsInt32().Identity().PrimaryKey()
