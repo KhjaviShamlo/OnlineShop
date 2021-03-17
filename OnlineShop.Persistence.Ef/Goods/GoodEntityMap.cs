@@ -1,10 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using OnlineShop.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
+using OnlineShop.Entities
 namespace OnlineShop.Persistence.EF.Goods
 {
     public class GoodEntityMap : IEntityTypeConfiguration<Good>

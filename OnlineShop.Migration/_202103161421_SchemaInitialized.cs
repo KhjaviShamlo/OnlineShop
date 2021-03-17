@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using FluentMigrator;
 namespace OnlineShop.Migrations
-{[Migration(202103161421)]
+{
+    
+    [Migration(202103161421)]
     
     class _202103161421_SchemaInitialized : FluentMigrator.Migration
     {
