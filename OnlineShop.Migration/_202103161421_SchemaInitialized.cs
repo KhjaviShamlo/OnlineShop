@@ -20,7 +20,7 @@ namespace OnlineShop.Migrations
                 .WithColumn("Id").AsInt32().Identity().PrimaryKey()
                 .WithColumn("Title").AsString().NotNullable();
 
-            Create.Table("SalesInvoice")
+            Create.Table("SalesInvoiceis")
                .WithColumn("Id").AsInt32().Identity().PrimaryKey()
                .WithColumn("Date").AsDateTime().NotNullable()
                .WithColumn("InvoiceNumber").AsString().NotNullable()
@@ -32,7 +32,7 @@ namespace OnlineShop.Migrations
                 .WithColumn("Date").AsDateTime()
                 .WithColumn("DocumentNumber").AsInt32().NotNullable()
                 .WithColumn("SalesInvoiceNumber").AsString().NotNullable()
-                .WithColumn("SalesInvoiceId").AsInt32().ForeignKey("SalesInvoice", "Id")
+                .WithColumn("SalesInvoiceId").AsInt32().ForeignKey("SalesInvoiceis", "Id")
                 .WithColumn("TotalAmount").AsDecimal().NotNullable();
 
             Create.Table("GoodInputs")
@@ -42,7 +42,17 @@ namespace OnlineShop.Migrations
                 .WithColumn("EntryDate").AsDateTime().NotNullable()
                 .WithColumn("Numberofgoods").AsInt32().NotNullable();
 
-           
+            Create.Table("SalesInvoiceItems")
+                 .WithColumn("Id").AsInt32().Identity().NotNullable()
+                 .WithColumn("GoodId").AsInt32().ForeignKey("Goods", "Id")
+                 .WithColumn("Count").AsInt32().NotNullable()
+                 .WithColumn("Price").AsDecimal().NotNullable()
+                 .WithColumn("InvoiceId").AsInt32().ForeignKey("SalesInvoiceis", "Id");
+
+            Create.Table("Warehouseis")
+                .WithColumn("Id").AsInt32().Identity().NotNullable()
+                .WithColumn("GoodId").AsInt32().ForeignKey("Goods","Id")
+                .WithColumn("Inventory").AsInt32();
 
         }
         public override void Down()

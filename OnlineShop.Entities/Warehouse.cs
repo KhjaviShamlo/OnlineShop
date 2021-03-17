@@ -7,7 +7,7 @@ namespace OnlineShop.Entities
     public class Warehouse
     {
         public int Id { get; set; }
-        public int GoodID { get; set; }
+        public int GoodId{ get; set; }
         public Good Good { get; set; }
         public int Inventory { get; set; }
     }
