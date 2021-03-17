@@ -25,7 +25,6 @@ namespace OnlineShop.Migrations
                .WithColumn("Date").AsDateTime().NotNullable()
                .WithColumn("InvoiceNumber").AsString().NotNullable()
                .WithColumn("CustomerName").AsString().NotNullable()
-               .WithColumn("AccountingDocuments").AsString().NotNullable();
 
             Create.Table("AccountingDocuments")
                 .WithColumn("Id").AsInt32().Identity().PrimaryKey()

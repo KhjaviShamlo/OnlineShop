@@ -10,6 +10,5 @@ namespace OnlineShop.Entities
         public DateTime Date { get; set; }
         public string InvoiceNumber { get; set; }
         public string CustomerName { get; set; }
-        public List< AccountingDocument> AccountingDocuments { get; set; }
     }
 }

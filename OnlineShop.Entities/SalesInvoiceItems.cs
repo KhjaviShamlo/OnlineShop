@@ -12,6 +12,6 @@ namespace OnlineShop.Entities
         public int Count { get; set; }
         public decimal Price { get; set; }
         public int InvoiceId { get; set; }
-        public SalesInvoice SalesInvoiceis { get; set; }
+        public SalesInvoice SalesInvoice { get; set; }
     }
 }
